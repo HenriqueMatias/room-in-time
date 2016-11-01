@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <navbar></navbar>
     <hello></hello>
   </div>
 </template>
 
 <script>
 import Hello from './components/Hello'
+import navbar from './components/NavBar'
 
 export default {
   name: 'app',
   components: {
+    navbar,
     Hello
   }
 }
@@ -23,6 +25,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
